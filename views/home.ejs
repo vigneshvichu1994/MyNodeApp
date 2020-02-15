@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Test - Home</title> 
+    <%- include('partials/cssBundle.ejs')  %>
+    <link href="/assets/css/site.css" rel="stylesheet" type="text/css" />
+   
+</head>
+
+<body>
+    <%- include('partials/menu.ejs')  %>
+    <div class="panel panel-default">
+        <div class="panel-heading">Employees</div>
+        <div class="panel-body">
+            <div id="dvEmployees"></div>
+        </div>
+      </div>
+    <%- include('partials/jsBundle.ejs')  %>
+    
+    <script src="assets/js/dashboard.js"></script>  
+</body>
+
+</html>
