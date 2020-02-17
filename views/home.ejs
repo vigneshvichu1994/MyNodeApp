@@ -2,10 +2,10 @@
 <html>
 
 <head>
-    <title>Test - Home</title> 
+    <title>Test - Home</title>
     <%- include('partials/cssBundle.ejs')  %>
     <link href="/assets/css/site.css" rel="stylesheet" type="text/css" />
-   
+
 </head>
 
 <body>
@@ -14,11 +14,13 @@
         <div class="panel-heading">Employees</div>
         <div class="panel-body">
             <div id="dvEmployees"></div>
+
+            <div><input type="button" id="btnAdd" value="New Employee"  onclick="employeeDashboard.getEmployee(0)" /></div>
         </div>
-      </div>
+    </div>
     <%- include('partials/jsBundle.ejs')  %>
-    <script src="assets/js/service.js"></script>  
-    <script src="assets/js/dashboard.js"></script>  
+    <script src="/assets/js/service.js"></script>
+    <script src="/assets/js/dashboard.js"></script>
 </body>
 
 </html>

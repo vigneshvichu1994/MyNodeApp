@@ -6,7 +6,7 @@ var _http = {
             url: url,
             data: JSON.stringify(data),
             method: "POST",
-            contentType: "text/json;charset=utf-8",
+            contentType: "application/json;charset=utf-8",
             dataType: "json",
             success: function (res, str, xhr) {
                 if (xhr.status == 200) {
@@ -26,7 +26,7 @@ var _http = {
         return $.ajax({
             url: url,
             method: "GET",
-            contentType: "text/json;charset=utf-8",
+            contentType: "application/json;charset=utf-8",
             dataType: "json",
             success: function (res, str, xhr) {
                 if (xhr.status == 200) {
