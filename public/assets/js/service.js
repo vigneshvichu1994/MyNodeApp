@@ -21,7 +21,7 @@ var _http = {
 
         });
     },
-    get: function (url, data, callback) {
+    get: function (url, callback) {
 
         return $.ajax({
             url: url,
